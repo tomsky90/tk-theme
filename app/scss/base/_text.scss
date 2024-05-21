@@ -1,0 +1,129 @@
+.text {
+  &--grey {
+    color: $grey;
+  }
+
+  &--white {
+    color: $white;
+  }
+
+  &--red {
+    color: $red;
+  }
+
+  &--light {
+    font-weight: 300;
+  }
+
+  &--regular {
+    font-weight: 400;
+  }
+
+  &--medium {
+    font-weight: 500;
+  }
+
+  &--semibold {
+    font-weight: 600;
+  }
+
+  &--bold {
+    font-weight: 700;
+  }
+
+  &--align-center {
+    text-align: center;
+  }
+
+  &--align-left {
+    text-align: left;
+  }
+
+  &--align-right {
+    text-align: right;
+  }
+
+  &--justify {
+    text-align: justify;
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--underline {
+    text-decoration: underline;
+
+    @include view(tablet) {
+      text-decoration: none;
+    }
+  }
+
+  &--size-48 {
+    font-size: 48px;
+
+    @include view(tablet) {
+      font-size: 22px;
+    }
+  }
+
+  &--size-34 {
+    font-size: 34px;
+
+    @include view(tablet) {
+      font-size: 22px;
+    }
+  }
+
+  &--size-32 {
+    font-size: 32px;
+
+    @include view(tablet) {
+      font-size: 22px;
+    }
+  }
+
+  &--size-29 {
+    font-size: 29px;
+
+    @include view(tablet) {
+      font-size: 16px;
+    }
+  }
+
+  &--size-24 {
+    font-size: 24px;
+
+    @include view(tablet) {
+      font-size: 22px;
+    }
+  }
+
+  &--size-22 {
+    font-size: 22px;
+
+    @include view(tablet) {
+      font-size: 12px;
+    }
+  }
+
+  &--size-18 {
+    font-size: 18px;
+
+    @include view(tablet) {
+      font-size: 16px;
+    }
+  }
+
+  &--size-16 {
+    font-size: 16px;
+  }
+
+  &--size-14 {
+    font-size: 14px;
+  }
+
+  &--size-12 {
+    font-size: 12px;
+  }
+}
