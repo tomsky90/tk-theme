@@ -12,19 +12,16 @@ if ( ! defined( '_S_VERSION' ) ) {
 require_once 'inc/menus.php';
 
 
-// require_once( get_stylesheet_directory() . '/customizer/customizer.php' );
+// require_once( get_stylesheet_directory() . '/assets/css/main.css?v=5.2' );
 
 function init_scripts() {
-	/**
-	 *  Main styles 
-	 */
-	wp_register_style( 'main-css', get_template_directory_uri() . '/assets/css/main.css?v=5.2', [], false, 'all' );
-	wp_register_script( 'main-js', get_template_directory_uri() . '/assets/js/script.js?v=1.0', [], false, 'all' );
+    wp_register_style( 'main-css', get_template_directory_uri() . '/assets/css/main.css?v=5.2', [], false, 'all' );
+    wp_enqueue_style( 'main-css' );
 
-	wp_enqueue_style( 'main-css' );
-	wp_enqueue_script( 'main-js' );
+    wp_register_script( 'main-js', get_template_directory_uri() . '/assets/js/script.js?v=1.0', [], false, 'all' );
+    wp_enqueue_script( 'main-js' );
 }
-
+add_action( 'wp_enqueue_scripts', 'init_scripts' );
 
 function add_arrow_icon( $items, $args ) {
 	if ( $args->theme_location == 'header-menu' ) {
@@ -49,27 +46,4 @@ function add_arrow_icon( $items, $args ) {
 }
 
 
-// Default images for new animals
-// function set_default_acf_thumbnail_image($post_id) {
-// 	// Check if the post type is 'animals'
-// 	if (get_post_type($post_id) === 'animals') {
-// 			// Check if the 'thumbnail-image' ACF field is empty
-// 			if (empty(get_field('thumbnail-image', $post_id))) {
-// 					// Get the attachment ID for the default image
-// 					$default_image_id = 305;
 
-// 					// Update the 'thumbnail-image' ACF field with the default image ID
-// 					update_field('thumbnail-image', $default_image_id, $post_id);
-
-// 					// Remove default classes from the default image
-// 					$default_image_classes = array();
-// 					update_post_meta($default_image_id, '_wp_attachment_image_class', $default_image_classes);
-
-// 					// Add the 'animal__image' class to the default image
-// 					$new_image_classes = array('animal__image');
-// 					update_post_meta($default_image_id, '_wp_attachment_image_class', $new_image_classes);
-// 			}
-// 	}
-// }
-
-// add_action('save_post', 'set_default_acf_thumbnail_image');
