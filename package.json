@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "css-declaration-sorter": "^6.3.1",
+    "gulp-uglify": "^3.0.2",
     "husky": "^8.0.2",
     "lint-staged": "^13.0.3",
     "postcss": "^8.4.19",

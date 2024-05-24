@@ -2,7 +2,7 @@
 /**
  * Page
  * 
- * @package firsttheme
+ * @package labella
  */
 get_header();
 ?>

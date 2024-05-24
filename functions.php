@@ -1,6 +1,6 @@
 <?php
 /**
- * @package tomski
+ * @package labella
  */
 
 error_reporting( 0 );
