@@ -1,18 +1,25 @@
 
 <header class="top-navigation">
-    <div class="top-navigation__container">
-        <div class="top-navigation__wrapper">
-
-     
-            
-            <button title="Zamknij menu" type="button" class="top-navigation__menu-toggle">
-                
-            </button>
+    <nav class="nav">
+      <div class="nav__container">
+        <div class="nav__logo-wrapper">
+          
         </div>
-        <div class="top-navigation__main">
-            <nav class="top-navigation__nav">
-                <?php wp_nav_menu(array('theme_location' => 'header-menu', 'container_class' => 'top-navigation__menu')); ?>
-            </nav>
+        <div class="nav__desktop-nav">
+         <?php wp_nav_menu(array('theme_location' => 'header-menu', 'container_class' => 'top-navigation__menu')); ?>
         </div>
-    </div>
+        <button class="nav__mobile-show-btn">
+         
+        </button>
+        <div
+          class="nav__mobile-nav"
+        >
+          <button  class="nav__mobile-close-btn">
+           
+          </button>
+          <?php wp_nav_menu(array('theme_location' => 'header-menu', 'container_class' => 'top-navigation__menu')); ?>
+        </div>
+      </div>
+    </nav>
 </header>
+

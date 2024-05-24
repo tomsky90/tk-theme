@@ -20,7 +20,7 @@ const config = {
 
 function liveReload(done) {
   browserSync.init({
-    proxy: "http://testtheme.local/",
+    proxy: "http://labellatheme.local/",
   });
   done();
 }
@@ -34,14 +34,14 @@ function scssTask() {
   return src(config.app.scss)
     .pipe(sass().on("error", sass.logError))
     .pipe(cleanCSS())
-    .pipe(concat("main.min.css"))
+    .pipe(concat("main.css"))
     .pipe(dest(config.dist.css))
     .pipe(browserSync.stream());
 }
 
 function jsTask() {
   return src(config.app.js)
-    .pipe(concat("script.js"))
+    .pipe(concat("script-min.js"))
     .pipe(uglify())
     .pipe(dest(config.dist.js))
     .pipe(browserSync.stream());
