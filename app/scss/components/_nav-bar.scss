@@ -30,10 +30,15 @@
     }
   }
 
-  &__link {
+  &__menu {
+    display: flex;
+  }
+
+  &__link a {
     margin-right: 10px;
     color: $white;
     font-size: 24px;
+    text-decoration: none;
 
     &--mobile {
       margin-bottom: 20px;
@@ -41,10 +46,10 @@
     &:hover {
       color: $gold;
     }
+  }
 
-    &.active {
-      color: $gold;
-    }
+  .current-menu-item a {
+    color: $gold;
   }
 
   &__mobile-nav {

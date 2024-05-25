@@ -24,6 +24,15 @@ function init_scripts() {
 add_action( 'wp_enqueue_scripts', 'init_scripts' );
 
 
-
+function labella_theme_setup() {
+   
+    add_theme_support('custom-logo', array(
+        'height'      => 100,
+        'width'       => 400,
+        'flex-height' => true,
+        'flex-width'  => true,
+    ));
+}
+add_action('after_setup_theme', 'labella_theme_setup');
 
 
