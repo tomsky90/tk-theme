@@ -10,11 +10,13 @@ const config = {
   app: {
     js: "./app/js/*.js",
     scss: "./app/scss/**/*.scss",
+    images: "./app/images/**/*",
   },
   dist: {
     base: "./assets/",
     css: "./assets/css",
     js: "./assets/js",
+    images: "./assets/images",
   },
 };
 
@@ -48,19 +50,28 @@ function jsTask() {
 }
 
 function cleanUp() {
-  return del([config.dist.base]);
+  return del([
+    `${config.dist.base}/**`,
+    `!${config.dist.images}`,
+    `!${config.dist.images}/**`,
+  ]);
+}
+
+function copyImages() {
+  return src(config.app.images).pipe(dest(config.dist.images));
 }
 
 function watchFiles() {
   watch(config.app.scss, series(scssTask, reload));
   watch(config.app.js, series(jsTask, reload));
   watch("./**/*.php", reload);
+  watch(config.app.images, series(copyImages, reload));
 }
 
 exports.default = series(
   cleanUp,
-  parallel(scssTask, jsTask),
+  parallel(scssTask, jsTask, copyImages),
   parallel(watchFiles, liveReload)
 );
 
-exports.prod = series(cleanUp, parallel(scssTask, jsTask));
+exports.prod = series(cleanUp, parallel(scssTask, jsTask, copyImages));
