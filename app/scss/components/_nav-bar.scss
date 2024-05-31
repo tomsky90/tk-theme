@@ -74,6 +74,10 @@
 
   &__mobile-show-btn {
     display: none;
+    border: none;
+    background-image: url("../images/burger-icon.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
     width: 25px;
     height: 25px;
 
@@ -86,6 +90,11 @@
     position: absolute;
     top: 40px;
     right: 40px;
+    border: none;
+    background-image: url("../images/close.png");
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
   }
 
   &__mobile-close-btn-img {

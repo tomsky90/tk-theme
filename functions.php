@@ -35,4 +35,20 @@ function labella_theme_setup() {
 }
 add_action('after_setup_theme', 'labella_theme_setup');
 
+function remove_admin_bar_bump() {
+   remove_action('wp_head', '_admin_bar_bump_cb');
+}
+add_action('get_header', 'remove_admin_bar_bump');
+
+add_filter( 'get_custom_logo', 'change_logo_class' );
+
+
+function change_logo_class( $html ) {
+
+    $html = str_replace( 'custom-logo', 'nav__logo', $html );
+    
+
+    return $html;
+}
+
 
