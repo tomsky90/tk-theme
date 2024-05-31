@@ -1,12 +1,14 @@
- <section className="home__hero">
-        <div className="home__hero-wrapper">
-          <div className="home__hero-text-wrapper">
-            <h1 className="home__hero-heading">You are worth it</h1>
-            <h2 className="home__hero-sub-heading">Best salon in Manchester</h2>
-            
+ <section class="home__hero">
+        <div class="home__hero-wrapper">
+          <div class="home__hero-text-wrapper">
+            <h1 class="home__hero-heading"><?php echo esc_html($attributes['banner-heading'])?></h1>
+            <h2 class="home__hero-sub-heading"><?php echo esc_html($attributes['banner-subheading'])?></h2>
+            <a href="http://labellatheme.local/contact/" class="home__hero-link">Book Now</a>
           </div>
-          <div className="home__hero-img-wrapper">
-            <img className="home__hero-img"  alt="smiling women" />
+          <div class="home__hero-img-wrapper">
+            <?php if ( isset( $attributes['banner-img']['url'] ) ) : ?>
+  <img class="home__hero-img" src="<?php echo esc_url( $attributes['banner-img']['url'] ); ?>" alt="<?php echo esc_attr( $attributes['control_name']['alt'] ); ?>">
+<?php endif; ?>
           </div>
         </div>
       </section>

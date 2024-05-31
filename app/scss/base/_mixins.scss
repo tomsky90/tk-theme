@@ -29,8 +29,4 @@
   padding-inline: 16px;
   width: 100%;
   max-width: 1360px;
-
-  @include view(tablet) {
-    margin-block: 16px;
-  }
 }

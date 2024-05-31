@@ -6,10 +6,12 @@
  */
 get_header();
 ?>
-
-<?php 
+<div class="home">
+  <?php 
 the_content()
 ?>
+</div>
+
 
 
 <?php get_footer() ?>
