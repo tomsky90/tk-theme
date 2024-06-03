@@ -1,2 +1,6 @@
-const name = "tom";
-console.log(name);
+var swiper = new Swiper(".mySwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
