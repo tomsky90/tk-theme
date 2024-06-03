@@ -1,0 +1,59 @@
+.footer {
+  background-color: $black;
+  padding: 90px 0;
+  color: $gold;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include container;
+
+    @include view(tablet) {
+      row-gap: 40px;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 10px;
+  }
+
+  &__links-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    @include view(tablet) {
+      width: 50%;
+    }
+
+    @include view(mobile) {
+      width: 100%;
+    }
+  }
+
+  &__link-wrapper {
+    display: flex;
+    column-gap: 10px;
+  }
+
+  &__link {
+    color: $grey;
+    text-decoration: none;
+  }
+
+  &__link-icon {
+    width: 20px;
+    object-fit: contain;
+  }
+
+  &__logo {
+    @include view(tablet) {
+      width: 100px;
+    }
+    @include view(mobile) {
+      width: 100px;
+    }
+  }
+}
