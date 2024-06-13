@@ -1,5 +1,5 @@
  <section class="team">
-        <h2 class="team__heading"><?php echo esc_html($atttributes['team-section-heading'])?></h2>
+        <h2 class="team__heading"><?php echo esc_html($attributes['team-section-heading'])?></h2>
         <div class="team__wrapper">
           <?php foreach( $attributes['team-section-cards'] as $inner ): ?>
             <div class="team__card">

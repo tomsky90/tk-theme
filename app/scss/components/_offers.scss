@@ -1,0 +1,26 @@
+.offers {
+  padding: 200px 0;
+  @include container;
+
+  @include view(mobile) {
+    padding: 100px 0;
+  }
+
+  &__img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__img {
+    width: 70%;
+
+    @include view(mobile) {
+      width: 90%;
+    }
+  }
+
+  &__prices {
+    @include container;
+  }
+}
