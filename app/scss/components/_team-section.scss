@@ -1,0 +1,61 @@
+.team {
+  padding: 200px 0;
+  color: $black;
+
+  @include view(mobile) {
+    padding: 100px 0;
+  }
+
+  &__heading {
+    position: relative;
+    margin-bottom: 80px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 38px;
+    text-align: center;
+
+    &::after {
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $gold;
+      width: 70px;
+      height: 3px;
+      content: "";
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    column-gap: 50px;
+    justify-content: space-evenly;
+
+    @include container;
+
+    @include view(tablet) {
+      row-gap: 100px;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__card {
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 80px 30px 100px 30px;
+    width: 25%;
+
+    @include view(tablet) {
+      width: 50%;
+    }
+
+    @include view(mobile) {
+      width: 80%;
+    }
+  }
+}
