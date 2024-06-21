@@ -14,6 +14,12 @@
 
   @include container;
 
+  &__map-wrapper {
+    @include view(mobile) {
+      width: 90%;
+    }
+  }
+
   &__map {
     width: 600px;
     height: 450px;

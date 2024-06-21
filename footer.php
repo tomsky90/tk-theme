@@ -51,10 +51,12 @@
             <p class="footer__link">Saturday: 8am - 12pm</p>
           </div>
         </div>
-         <div className="footer__links-wrapper">
+         <div class="footer__links-wrapper">
           <a href="./home">
-            <img className="footer__logo" src="<?php echo get_template_directory_uri()?>/assets/images/logo.webp" alt="footer logo" />
+            <img class="footer__logo" src="<?php echo get_template_directory_uri()?>/assets/images/logo.webp" alt="footer logo" />
           </a>
         </div>
       </div>
     </footer>
+
+    <?php wp_footer()?>

@@ -1,0 +1,53 @@
+.wpforms-field-row.wpforms-field-medium {
+  max-width: 100% !important;
+}
+
+.wpforms-field-medium.wpforms-field-required {
+  max-width: 100% !important;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 50% !important;
+  @include container;
+
+  @include view(tablet) {
+    width: 80% !important;
+  }
+
+  @include view(mobile) {
+    width: 100% !important;
+  }
+
+  @include view(mobile) {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+  }
+
+  &__name-inputs {
+    @include view(tablet) {
+      width: 100% !important;
+    }
+  }
+
+  &__email-input {
+    @include view(tablet) {
+      width: 100% !important;
+    }
+  }
+
+  &__submit-btn {
+    display: block;
+    margin-right: auto !important;
+    margin-bottom: 100px !important;
+    margin-left: auto !important;
+    background-color: $black !important;
+    width: 200px !important;
+    color: $gold !important;
+
+    &:hover {
+      scale: 1.1;
+    }
+  }
+}
