@@ -42,7 +42,8 @@ function scssTask() {
 }
 
 function jsTask() {
-  return src(config.app.js)
+  return src(["./app/js/*.js", "!./app/js/script-min.js"])
+    .on("data", (file) => console.log("Processing:", file.path))
     .pipe(concat("script-min.js"))
     .pipe(uglify())
     .pipe(dest(config.dist.js))
