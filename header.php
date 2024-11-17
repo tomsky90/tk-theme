@@ -8,7 +8,7 @@
 	<meta name="description" content="Best Beauty saloon in Manchester. Serving customers for over a decade.">
 	<meta name="keywords" content="Hair, Hairstyle, Beauty, Manchester">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-	<script async src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

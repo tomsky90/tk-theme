@@ -12,7 +12,6 @@ if (!defined('_S_VERSION')) {
 require_once 'inc/menus.php';
 
 
-// require_once( get_stylesheet_directory() . '/assets/css/main.css?v=5.2' );
 
 function init_scripts()
 {
