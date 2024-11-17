@@ -45,15 +45,18 @@
 
   &__link-icon {
     width: 20px;
+    height: auto;
     object-fit: contain;
   }
 
   &__logo {
     @include view(tablet) {
       width: 100px;
+      height: auto;
     }
     @include view(mobile) {
       width: 100px;
+      height: auto;
     }
   }
 }
