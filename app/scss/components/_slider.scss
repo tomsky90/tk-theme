@@ -1,8 +1,8 @@
 .slider {
-  padding: 200px 0;
+  padding: 150px 0;
 
   @include view(mobile) {
-    padding: 150px 0;
+    padding: 100px 0;
   }
 
   @include container;
