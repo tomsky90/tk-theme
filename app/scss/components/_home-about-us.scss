@@ -29,10 +29,12 @@
   &__icon-wrapper {
     margin-bottom: 40px;
     width: 90px;
+    height: 90px;
   }
 
   &__icon {
     width: 100%;
+    height: auto;
   }
 
   &__text-wrapper {
@@ -73,5 +75,6 @@
 
   &__img {
     width: 100%;
+    height: auto;
   }
 }
