@@ -17,7 +17,7 @@
       <div class="nav__desktop-nav">
         <?php wp_nav_menu(array('theme_location' => 'header-menu', 'menu_class' => 'nav__menu')); ?>
       </div>
-      <button class="nav__mobile-show-btn">
+      <button aria-label="Toggle navigation menu" class="nav__mobile-show-btn">
 
       </button>
       <div class="nav__mobile-nav">

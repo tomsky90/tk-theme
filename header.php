@@ -8,10 +8,21 @@
 	<meta name="description" content="Best Beauty saloon in Manchester. Serving customers for over a decade.">
 	<meta name="keywords" content="Hair, Hairstyle, Beauty, Manchester">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-	<link
+	<script async src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+	<link rel="stylesheet"
 		href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-		rel="stylesheet">
+		media="print" onload="this.onload=null;this.removeAttribute('media');" fetchpriority="high">
+
+
+	<noscript>
+		<link rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap">
+	</noscript>
 	<?php wp_head(); ?>
 </head>
 
