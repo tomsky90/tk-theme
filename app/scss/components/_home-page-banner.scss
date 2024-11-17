@@ -26,10 +26,12 @@
 
     @include view(tablet) {
       transform: translateX(100px);
+      height: auto;
     }
 
     @include view(mobile) {
       transform: translateX(0px);
+      height: auto;
     }
   }
 
