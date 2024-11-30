@@ -1,6 +1,6 @@
 <?php
 /**
- * @package labella
+ * @package landscape
  */
 
 error_reporting(0);

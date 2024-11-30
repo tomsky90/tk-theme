@@ -22,7 +22,7 @@ const config = {
 
 function liveReload(done) {
   browserSync.init({
-    proxy: "http://labellatheme.local/",
+    proxy: "http://landscape.local/",
   });
   done();
 }
