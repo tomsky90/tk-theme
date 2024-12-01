@@ -4,9 +4,10 @@
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Labella Beauty Saloon</title>
-	<meta name="description" content="Best Beauty saloon in Manchester. Serving customers for over a decade.">
-	<meta name="keywords" content="Hair, Hairstyle, Beauty, Manchester">
+	<title>Wirral Landscaping</title>
+	<meta name="description"
+		content="Wirral based landscaping company, serving customers around Wirral, Liverpool and Cheshire, for over ten years.">
+	<meta name="keywords" content="landscaping, wirral, patios, drives, gardens design, landscape design">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<script async src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
