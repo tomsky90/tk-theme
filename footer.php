@@ -4,7 +4,14 @@
 
   <div class="footer__wrapper">
     <div class="footer__links-wrapper">
+      <a href="./home">
+        <img class="footer__logo" src="<?php echo get_template_directory_uri() ?>/assets/images/logo.webp"
+          alt="footer logo" />
+      </a>
+    </div>
+    <div class="footer__links-wrapper">
       <h3 class="footer__heading">Contact</h3>
+
       <div class="footer__link-wrapper">
 
         <img class="footer__link-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/Location-on.webp"
@@ -53,12 +60,7 @@
         <p class="footer__link">Saturday: 8am - 12pm</p>
       </div>
     </div>
-    <div class="footer__links-wrapper">
-      <a href="./home">
-        <img class="footer__logo" src="<?php echo get_template_directory_uri() ?>/assets/images/logo.webp"
-          alt="footer logo" />
-      </a>
-    </div>
+
   </div>
 </footer>
 

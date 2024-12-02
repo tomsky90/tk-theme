@@ -50,6 +50,7 @@
   }
 
   &__logo {
+    width: 150px;
     @include view(tablet) {
       width: 100px;
       height: auto;
