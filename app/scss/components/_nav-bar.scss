@@ -15,7 +15,7 @@
     width: 100px;
 
     @include view(mobile) {
-      width: 60px;
+      width: 100px;
     }
   }
 
