@@ -7,39 +7,39 @@
       <h3 class="footer__heading">Contact</h3>
       <div class="footer__link-wrapper">
 
-        <img class="footer__link-icon"
-          src="<?php echo get_template_directory_uri(); ?>/assets/images/maps-pin-line-icon.webp" alt="map pin" />
-        <p class="footer__link">Manchester M1 LZ</p>
+        <img class="footer__link-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/Location-on.webp"
+          alt="map pin" />
+        <p class="footer__link">Wirral Ch62</p>
       </div>
       <div class="footer__link-wrapper">
-        <img class="footer__link-icon"
-          src="<?php echo get_template_directory_uri() ?>/assets/images/phone-line-icon.webp" alt="phone" />
+        <img class="footer__link-icon" src="<?php echo get_template_directory_uri() ?>/assets/images/Local-phone.webp"
+          alt="phone" />
         <a class="footer__link" href="tel:078645723">
           078645723
         </a>
       </div>
       <div class="footer__link-wrapper">
-        <img class="footer__link-icon"
-          src="<?php echo get_template_directory_uri() ?>/assets/images/envelope-line-icon.webp" alt="mail" />
-        <a class="footer__link" href="mailto:hi@labella.com">
-          hi@labella.com
+        <img class="footer__link-icon" src="<?php echo get_template_directory_uri() ?>/assets/images/Email.webp"
+          alt="mail" />
+        <a class="footer__link" href="mailto:hi@wirrallandscaping.com">
+          hi@wirrallandscaping.com
         </a>
       </div>
     </div>
     <div class="footer__links-wrapper">
       <h3 class="footer__heading">Socials</h3>
       <div class="footer__link-wrapper">
-        <img class="footer__link-icon"
-          src="<?php echo get_template_directory_uri() ?>/assets/images/black-instagram-icon.webp" alt="instagram" />
+        <img class="footer__link-icon" src="<?php echo get_template_directory_uri() ?>/assets/images/Facebook.webp"
+          alt="facebook" />
         <a class="footer__link" href="www.instagram">
-          labella-instagram
+          wirrallandscaping facebook
         </a>
       </div>
       <div class="footer__link-wrapper">
-        <img class="footer__link-icon"
-          src="<?php echo get_template_directory_uri() ?>/assets/images/x-social-media-black-icon.webp" alt="x" />
+        <img class="footer__link-icon" src="<?php echo get_template_directory_uri() ?>/assets/images/TwitterX.webp"
+          alt="x" />
         <a class="footer__link" href="www.x.com">
-          labella-twitter
+          wirrallandscaping-twitter
         </a>
       </div>
     </div>
