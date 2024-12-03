@@ -50,7 +50,7 @@
         </a>
       </div>
     </div>
-    <div class="footer__links-wrapp">
+    <div class="footer__links-wrapper">
       <h3 class="footer__heading">We Are Open</h3>
       <div class="footer__link-wrapper">
         <p class="footer__link">Monday - Friday: 8am - 4pm</p>
