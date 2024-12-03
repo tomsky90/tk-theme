@@ -6,9 +6,12 @@
   </div>
   <div class="banner__img-wrapper">
 
-    <?php if (isset($attributes['banner-img']['url'])): ?>
-      <img class='banner__bgc-image' src="<?php echo esc_url($attributes['banner-img']['url']) ?>"
-        alt="<?php echo esc_attr($attributes['banner-img']['alt']) ?>" />
-    <?php endif ?>
+    <?php if (isset($attributes['banner-img']['id'])): ?>
+      <?php
+      $image_url = wp_get_attachment_image_url($attributes['banner-img']['id'], 'large');
+      $alt_text = get_post_meta($attributes['banner-img']['id'], '_wp_attachment_image_alt', true);
+      ?>
+      <img class="banner__bgc-image" src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($alt_text); ?>" />
+    <?php endif; ?>
   </div>
 </section>
