@@ -1,27 +1,28 @@
- <section class="home-about">
-        <div class="home-about__wrapper">
-          <div class="home-about__tile">
-            <div class="home-about__icon-wrapper">
-             <?php if ( isset( $attributes['home-about-icon']['url'] ) ) : ?>
-  <img class="home-about__icon" src="<?php echo esc_url( $attributes['home-about-icon']['url'] ); ?>" alt="<?php echo esc_attr( $attributes['home-about-icon']['alt'] ); ?>">
-<?php endif; ?>
-            </div>
-            <div class="home-about__text-wrapper">
-              <h2 class="home-about__heading"><?php echo esc_html($attributes['home-about-heading'])?></h2>
-              <p>
-               <?php echo esc_html($attributes['home-about-text'])?>
-              </p>
-            </div>
-          </div> 
-          <div class="home-about__tile">
-            <div class="home-about__img-wrapper">
-              <div class="home-about__img-wrapper">
-                <?php if ( isset( $attributes['home-about-image']['url'] ) ) : ?>
-  <img class="home-about__img" src="<?php echo esc_url( $attributes['home-about-image']['url'] ); ?>" alt="<?php echo esc_attr( $attributes['home-about-image']['alt'] ); ?>">
-<?php endif; ?>
-          
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+<section class="home-about">
+  <div class="home-about__wrapper">
+    <h2 class="home-about__heading"><?php echo esc_html($attributes['home-about-heading']) ?></h2>
+
+    <div class="home-about__tile">
+      <div class="home-about__img-wrapper">
+        <?php if (isset($attributes['home-about-image']['id'])): ?>
+          <?php
+          $image_url = wp_get_attachment_image_url($attributes['home-about-image']['id'], 'large');
+          $alt_text = get_post_meta($attributes['home-about-image']['id'], '_wp_attachment_image_alt', true);
+          ?>
+          <img class="home-about__img" src="<?php echo esc_url($image_url); ?>"
+            alt="<?php echo esc_attr($alt_text); ?>" />
+        <?php endif; ?>
+
+
+      </div>
+      <div class="home-about__text-wrapper">
+        <p class="home-about__text">
+          <?php echo esc_html($attributes['home-about-text']) ?>
+        </p>
+
+        <a href="./about" target="blank" class="cta-link">About Us</a>
+      </div>
+
+    </div>
+  </div>
+</section>

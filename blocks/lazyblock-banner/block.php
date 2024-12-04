@@ -2,7 +2,7 @@
   <div class="banner__text-wrapper">
     <h1 class="banner__heading"><?php echo esc_html($attributes['banner-heading']) ?></h1>
     <h2 class="banner__subheading"><?php echo esc_html($attributes['banner-subheading']) ?></h2>
-    <a href="<?php echo esc_url($attributes['banner-cta']); ?>" class="banner__btn">Get a Quote</a>
+    <a href="<?php echo esc_url($attributes['banner-cta']); ?>" target="blank" class="cta-link">Get a Quote</a>
   </div>
   <div class="banner__img-wrapper">
 
