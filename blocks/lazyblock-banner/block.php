@@ -9,9 +9,15 @@
     <?php if (isset($attributes['banner-img']['id'])): ?>
       <?php
       $image_url = wp_get_attachment_image_url($attributes['banner-img']['id'], 'large');
+      $mobile_image_url = wp_get_attachment_image_url($attributes['banner-img']['id'], 'medium');
       $alt_text = get_post_meta($attributes['banner-img']['id'], '_wp_attachment_image_alt', true);
       ?>
-      <img class="banner__bgc-image" src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($alt_text); ?>" />
+      <picture>
+        <source media="(max-width: 600px)" srcset="<?php echo esc_url($mobile_image_url); ?>" />
+        <img class="banner__bgc-image" src="<?php echo esc_url($image_url); ?>"
+          alt="<?php echo esc_attr($alt_text); ?>" />
+      </picture>
+
     <?php endif; ?>
   </div>
 </section>
