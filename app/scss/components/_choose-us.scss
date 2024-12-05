@@ -1,16 +1,17 @@
 .home-choose-us {
-  background-color: $pink;
-  padding: 200px 0;
+  clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+  background-color: $brown;
+  padding: 400px 0;
   color: $black;
 
   @include view(mobile) {
-    padding: 100px 0;
+    clip-path: polygon(0 0, 50% 5%, 100% 0, 100% 95%, 50% 100%, 0 95%);
+    padding: 200px 0;
   }
 
   &__wrapper {
     display: flex;
-    column-gap: 55px;
-    align-items: baseline;
+    column-gap: 80px;
 
     @include container;
 
@@ -26,21 +27,27 @@
 
   &__heading {
     position: relative;
-    margin-bottom: 80px;
+    margin-bottom: 150px;
     width: 100%;
+    color: $green;
     font-weight: bold;
-    font-size: 38px;
+    font-size: 36px;
     text-align: center;
 
     &::after {
       position: absolute;
-      bottom: -20px;
+      top: 20px;
       left: 50%;
       transform: translateX(-50%);
-      background-color: $gold;
-      width: 70px;
-      height: 3px;
+      background-image: url("../images/leaf.webp");
+      width: 119px;
+      height: 119px;
       content: "";
+
+      @include view(mobile) {
+        width: 100px;
+        height: 100px;
+      }
     }
   }
 
@@ -49,6 +56,10 @@
     row-gap: 30px;
     flex-direction: column;
     align-items: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    background-color: $white;
+    padding: 80px 15px;
     width: 30%;
 
     @include view(tablet) {
