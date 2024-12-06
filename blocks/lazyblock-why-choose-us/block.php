@@ -16,5 +16,10 @@
       </div>
 
     <?php endforeach ?>
+
   </div>
+  <div class="home-choose-us__link-wrapper">
+    <a class="cta-link home-choose-us__link" href="./services" target="blank">All Services</a>
+  </div>
+
 </section>
