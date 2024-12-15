@@ -4,7 +4,6 @@
     <h2 class="small-banner__subheading"><?php echo esc_html($attributes['small-banner-subheading']) ?></h2>
   </div>
   <div class="small-banner__img-wrapper">
-    <div class="small-banner__overlay"></div>
     <?php if (isset($attributes['small-banner-img']['url'])): ?>
       <img class='small-banner__bgc-image' src="<?php echo esc_url($attributes['small-banner-img']['url']) ?>"
         alt="<?php echo esc_attr($attributes['small-banner-img']['alt']) ?>" />

@@ -1,0 +1,58 @@
+.small-banner {
+  position: relative;
+
+  &__text-wrapper {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    z-index: 8;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 50px;
+    width: 40%;
+
+    @include view(tablet) {
+      top: 5%;
+      padding: 20px;
+      width: 90%;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 30px;
+    color: $white;
+    font-weight: bold;
+    font-size: 64px;
+
+    @include view(mobile) {
+      margin-bottom: 15px;
+      font-size: 30px;
+    }
+  }
+
+  &__subheading {
+    margin-bottom: 30px;
+    color: $white;
+    font-weight: 500;
+    font-size: 32px;
+
+    @include view(mobile) {
+      font-size: 15px;
+    }
+  }
+
+  &__bgc-image {
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+    width: 100%;
+
+    @include view(tablet) {
+      height: 500px;
+      object-fit: cover;
+    }
+
+    @include view(mobile) {
+      height: 300px;
+      object-fit: cover;
+    }
+  }
+}
