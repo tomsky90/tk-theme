@@ -4,7 +4,7 @@
   <div class="gallery__images-wrapper">
     <?php foreach ($attributes['recent-work-repeater'] as $image): ?>
       <div class='gallery__image-wrapper'>
-        <img class="gallery__image" src="<?php echo esc_url($image['url']); ?>"
+        <img loading="lazy" class="gallery__image" src="<?php echo esc_url($image['url']); ?>"
           alt="<?php echo esc_attr($image['alt']); ?>">
       </div>
     <?php endforeach; ?>
