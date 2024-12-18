@@ -1,0 +1,123 @@
+.reviews {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+
+  padding: 200px 0;
+  overflow: hidden;
+
+  @include container;
+
+  padding-inline: 0;
+
+  &__slider {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+  }
+
+  &__nav-wrapper {
+    position: absolute;
+    bottom: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__nav-btn {
+    margin-right: 10px;
+    background-color: $white;
+    width: 20px;
+    height: 20px;
+
+    &.active {
+      background-color: $black;
+    }
+  }
+
+  &__heading {
+    display: block;
+    position: relative;
+    margin-bottom: 150px;
+    width: 100%;
+    color: $green;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+
+    @include view(mobile) {
+      font-size: 24px;
+    }
+
+    &::after {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url("../images/leaf.webp");
+      width: 119px;
+      height: 119px;
+      content: "";
+
+      @include view(mobile) {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+
+  &__review-wrapper {
+    display: flex;
+    position: relative;
+    column-gap: 100px;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 8px;
+    background-color: $grey;
+    padding: 100px 100px 200px;
+    width: 100%;
+
+    @include view(tablet) {
+      padding: 200px 50px 200px;
+    }
+
+    @include view(mobile) {
+      flex-direction: column;
+    }
+  }
+
+  &__quote {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    @include view(mobile) {
+      top: 20px;
+      right: 20px;
+    }
+  }
+
+  &__image-wrapper {
+    width: 20%;
+
+    @include view(mobile) {
+      margin-bottom: 50px;
+      width: 100%;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__stars {
+    margin-bottom: 20px;
+  }
+
+  &__text-wrapper {
+    width: 50%;
+
+    @include view(mobile) {
+      width: 100%;
+    }
+  }
+}
