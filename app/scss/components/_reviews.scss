@@ -1,14 +1,13 @@
 .reviews {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-
-  padding: 200px 0;
-  overflow: hidden;
-
   @include container;
 
-  padding-inline: 0;
+  &__wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 200px 0;
+    overflow: hidden;
+  }
 
   &__slider {
     display: flex;
