@@ -9,11 +9,15 @@
     border-radius: 8px;
     background-color: rgba(0, 0, 0, 0.4);
     padding: 50px;
-    width: 40%;
+    width: 45%;
 
-    @include view(tablet) {
+    @include view(desktop) {
       top: 5%;
       padding: 20px;
+      width: 60%;
+    }
+
+    @include view(tablet) {
       width: 90%;
     }
   }
