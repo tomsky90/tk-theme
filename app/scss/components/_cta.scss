@@ -1,0 +1,16 @@
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+  @include container;
+
+  &__heading {
+    color: $green;
+    font-size: 36px;
+  }
+
+  &__link {
+    margin: 40px auto;
+  }
+}
