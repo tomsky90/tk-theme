@@ -21,7 +21,7 @@
           </div>
           <div class="reviews__text-wrapper">
             <img class="reviews__stars" src="<?php echo get_template_directory_uri(); ?>/assets/images/stars.webp"
-              alt='Five stars review'>
+              alt='Five stars'>
             <p class="reviews__text"><?php echo esc_html($review['reviews-text']) ?></p>
             <p class="reviews__text"><?php echo esc_html($review['reviews-author']) ?></p>
           </div>

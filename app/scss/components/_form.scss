@@ -10,11 +10,8 @@
   display: flex;
   flex-direction: column;
   width: 50% !important;
-  @include container;
 
-  @include view(tablet) {
-    width: 80% !important;
-  }
+  @include container;
 
   @include view(mobile) {
     width: 100% !important;
@@ -42,9 +39,9 @@
     margin-right: auto !important;
     margin-bottom: 100px !important;
     margin-left: auto !important;
-    background-color: $black !important;
-    width: 200px !important;
-    color: $gold !important;
+    background-color: $green !important;
+    min-width: 200px !important;
+    color: $white !important;
 
     &:hover {
       scale: 1.1;
