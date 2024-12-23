@@ -13,7 +13,11 @@
 
   @include container;
 
-  @include view(mobile) {
+  @include view(tablet) {
+    width: 80% !important;
+  }
+
+  @include view(tablet) {
     width: 100% !important;
   }
 

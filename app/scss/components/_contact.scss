@@ -1,11 +1,6 @@
 .contact {
   padding: 200px 0;
 
-  @include view(tablet) {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-
   @include view(mobile) {
     padding: 100px 0;
   }
@@ -44,15 +39,21 @@
 
   &__wrapper {
     display: flex;
+
+    @include view(tablet) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
   }
 
   &__map-wrapper {
     @include view(mobile) {
-      width: 90%;
+      width: 100%;
     }
   }
 
   &__map {
+    border: none;
     width: 100%;
     height: 450px;
 
@@ -62,12 +63,11 @@
     }
 
     @include view(tablet) {
-      width: 600px;
+      width: 100%;
       height: 500px;
     }
 
     @include view(mobile) {
-      width: 100%;
       height: 350px;
     }
   }
