@@ -12,7 +12,7 @@
 
   &__logo-wrapper {
     z-index: 10;
-    width: 100px;
+    width: 150px;
 
     @include view(mobile) {
       width: 100px;
@@ -52,7 +52,7 @@
   }
 
   .current-menu-item a {
-    color: $green;
+    font-weight: 800;
   }
 
   &__mobile-nav {
@@ -78,7 +78,7 @@
   &__mobile-show-btn {
     display: none;
     border: none;
-    background-image: url("../images/burger-icon.png");
+    background-image: url("../images/burger-icon.webp");
     background-repeat: no-repeat;
     background-color: transparent;
     width: 25px;
@@ -94,7 +94,7 @@
     top: 40px;
     right: 40px;
     border: none;
-    background-image: url("../images/close.png");
+    background-image: url("../images/close.webp");
     background-color: transparent;
     width: 25px;
     height: 25px;
