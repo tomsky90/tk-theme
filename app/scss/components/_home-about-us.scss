@@ -83,7 +83,13 @@
   }
 
   &__img {
+    border-radius: 8px;
     width: 100%;
-    height: auto;
+    height: 500px;
+    object-fit: cover;
+
+    @include view(mobile) {
+      height: 400px;
+    }
   }
 }
