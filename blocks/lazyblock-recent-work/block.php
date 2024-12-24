@@ -4,8 +4,7 @@
   <div class="gallery__images-wrapper">
     <?php foreach ($attributes['recent-work-repeater'] as $image): ?>
       <div class='gallery__image-wrapper'>
-        <img loading="lazy" class="gallery__image" src="<?php echo esc_url($image['url']); ?>"
-          alt="<?php echo esc_attr($image['alt']); ?>">
+        <?php echo wp_get_attachment_image($image['id'], 'medium', false, ['class' => 'gallery__image', 'loading' => 'lazy']); ?>
       </div>
     <?php endforeach; ?>
     <div class="gallery__fullscreen-background ">
