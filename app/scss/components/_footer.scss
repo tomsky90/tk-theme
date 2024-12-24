@@ -51,13 +51,6 @@
 
   &__logo {
     width: 150px;
-    @include view(tablet) {
-      width: 100px;
-      height: auto;
-    }
-    @include view(mobile) {
-      width: 100px;
-      height: auto;
-    }
+    height: 84px;
   }
 }

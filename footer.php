@@ -5,8 +5,8 @@
   <div class="footer__wrapper">
     <div class="footer__links-wrapper">
       <a href="./home">
-        <img class="footer__logo" src="<?php echo get_template_directory_uri() ?>/assets/images/logo.webp"
-          alt="footer logo" />
+        <img loading="lazy" class="footer__logo"
+          src="<?php echo get_template_directory_uri() ?>/assets/images/logo.webp" alt="footer logo" />
       </a>
     </div>
     <div class="footer__links-wrapper">
