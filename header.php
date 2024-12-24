@@ -9,6 +9,13 @@
 		content="Wirral based landscaping company, serving customers around Wirral, Liverpool and Cheshire, for over ten years.">
 	<meta name="keywords" content="landscaping, wirral, patios, drives, gardens design, landscape design">
 
+	<meta property="og:title" content="Wirrallandscaping  " />
+	<meta property="og:description"
+		content="Wirral based landscaping company, serving customers around Wirral, Liverpool and Cheshire, for over ten years." />
+
+	<meta property="og:url" content="https://wirrallandscaping.tk-webdev.com/" />
+	<meta property="og:type" content="website" />
+
 
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
