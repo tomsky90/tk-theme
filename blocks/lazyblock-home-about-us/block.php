@@ -9,7 +9,7 @@
           $image_url = wp_get_attachment_image_url($attributes['home-about-image']['id'], 'large');
           $alt_text = get_post_meta($attributes['home-about-image']['id'], '_wp_attachment_image_alt', true);
           ?>
-          <img class="home-about__img" src="<?php echo esc_url($image_url); ?>"
+          <img loading="lazy" class="home-about__img" src="<?php echo esc_url($image_url); ?>"
             alt="<?php echo esc_attr($alt_text); ?>" />
         <?php endif; ?>
 
