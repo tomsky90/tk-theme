@@ -1,6 +1,6 @@
 <?php
 /**
- * @package landscape
+ * @package tk-webdev
  */
 get_header();
 ?>

@@ -2,14 +2,14 @@
 /**
  * Page
  * 
- * @package labella
+ * @package tk-webdev
  */
 get_header();
 ?>
 <div class="home">
-  <?php 
-the_content()
-?>
+  <?php
+  the_content()
+    ?>
 </div>
 
 
