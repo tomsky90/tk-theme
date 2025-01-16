@@ -1,6 +1,6 @@
 <?php
 /**
- * @package labella
+ * @package tk-webdev
  */
 
 error_reporting(0);

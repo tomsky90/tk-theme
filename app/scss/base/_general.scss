@@ -20,8 +20,9 @@ body {
 .cta-link {
   transition: background-color 0.1s ease-in-out;
   border-radius: 4px;
-  background-color: $green;
+  background: linear-gradient(to bottom, $light-blue, $blue);
   padding: 10px 15px;
+
   color: white;
   font-weight: 800;
   font-size: 32px;

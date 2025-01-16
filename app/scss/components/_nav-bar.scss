@@ -1,6 +1,9 @@
 .top-navigation {
   position: absolute;
   width: 100%;
+  @include view(mobile) {
+    margin-bottom: 50px;
+  }
 }
 
 .nav {
@@ -19,7 +22,7 @@
     width: 150px;
 
     @include view(mobile) {
-      width: 100px;
+      width: 80px;
     }
   }
 
@@ -37,12 +40,13 @@
 
   &__menu {
     display: flex;
+    column-gap: 20px;
     align-items: center;
   }
 
   &__link {
     @include view(mobile) {
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
   }
 
@@ -77,6 +81,7 @@
     top: 0;
     left: 0;
     flex-direction: column;
+
     align-items: center;
     transform: translateY(-100%);
     z-index: 9;

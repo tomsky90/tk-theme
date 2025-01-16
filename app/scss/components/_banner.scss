@@ -4,7 +4,17 @@
   overflow-y: hidden;
 
   @include view(mobile) {
-    height: 300px;
+    height: 600px;
+  }
+
+  &__blure {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
   }
 
   &__text-wrapper {
@@ -13,7 +23,7 @@
     left: 5%;
     z-index: 8;
     border-radius: 4px;
-    background-color: rgba(0, 0, 0, 0.4);
+
     padding: 50px;
     width: 40%;
 
@@ -25,6 +35,10 @@
       top: 5%;
       padding: 20px;
       width: 90%;
+    }
+
+    @include view(mobile) {
+      top: 15%;
     }
   }
 
@@ -47,23 +61,43 @@
     font-size: 32px;
 
     @include view(mobile) {
-      font-size: 15px;
+      font-weight: bold;
+      font-size: 24px;
     }
+  }
+
+  &__subheading-color {
+    color: $blue;
   }
 
   &__img-wrapper {
     position: relative;
   }
 
+  &__text {
+    margin-bottom: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+
+    @include view(mobile) {
+      font-weight: 400;
+      font-size: 18px;
+    }
+  }
+
   &__bgc-image {
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
     width: 100%;
     height: 850px;
     object-fit: cover;
     object-position: 70% 70%;
     @include view(mobile) {
-      height: 300px;
+      height: 700px;
       object-position: 90% 90%;
     }
+  }
+
+  &__small-image {
+    margin-bottom: 40px;
   }
 }
