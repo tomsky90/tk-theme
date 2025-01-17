@@ -16,11 +16,12 @@
 
       </div>
       <div class="home-about__text-wrapper">
-        <p class="home-about__text">
-          <?php echo esc_html($attributes['home-about-text']) ?>
-        </p>
+        <?php foreach ($attributes['home-about-text'] as $paragraph): ?>
+          <p class="home-about__text">
+            <?php echo esc_html($paragraph['paragraph']); ?>
+          </p>
+        <?php endforeach; ?>
 
-        <a href="./about" target="blank" class="cta-link">About Us</a>
       </div>
 
     </div>

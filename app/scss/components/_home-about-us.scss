@@ -36,7 +36,8 @@
   }
 
   &__text {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
 
     @include view(mobile) {
       margin-top: 20px;
@@ -62,8 +63,8 @@
       top: 20px;
       left: 50%;
       transform: translateX(-50%);
-      background-image: url("../images/leaf.webp");
-      width: 119px;
+      background-color: $purple;
+      width: 20%;
       height: 119px;
       content: "";
 
