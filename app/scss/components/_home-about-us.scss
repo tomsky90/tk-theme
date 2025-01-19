@@ -21,14 +21,19 @@
     align-items: flex-start;
     width: 100%;
 
-    @include view(mobile) {
+    @include view(tablet) {
       flex-direction: column;
+      align-items: center;
     }
   }
 
   &__text-wrapper {
     width: 50%;
     font-size: 24px;
+
+    @include view(tablet) {
+      width: 70%;
+    }
 
     @include view(mobile) {
       width: 100%;
@@ -39,7 +44,7 @@
     margin-bottom: 20px;
     font-size: 18px;
 
-    @include view(mobile) {
+    @include view(tablet) {
       margin-top: 20px;
       font-size: 18px;
     }
@@ -72,15 +77,19 @@
       height: 119px;
       content: "";
 
-      @include view(mobile) {
+      @include view(tablet) {
         clip-path: polygon(0% 0%, 100% 0%, 100% 55%, 0% 40%);
-        width: 50%;
+        width: 30%;
       }
     }
   }
 
   &__img-wrapper {
     width: 50%;
+
+    @include view(tablet) {
+      width: 70%;
+    }
 
     @include view(mobile) {
       width: 100%;
