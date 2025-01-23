@@ -51,6 +51,10 @@
   &__text {
     margin-bottom: 70px;
     width: 50%;
+
+    @include view(mobile) {
+      width: 90%;
+    }
   }
   &__wrapper {
     display: flex;
