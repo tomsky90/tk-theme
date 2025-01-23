@@ -19,7 +19,7 @@
     <?php foreach ($attributes['prices-includes'] as $benefit): ?>
 
       <li class="prices__list-item">
-        <p class="prices__list-item-text"><span><?php echo esc_html($benefit['prices-includes-benefit']) ?></span></p>
+        <p class="prices__list-item-text"><?php echo esc_html($benefit['prices-includes-benefit']) ?></p>
       </li>
 
 
