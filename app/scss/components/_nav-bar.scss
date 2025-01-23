@@ -33,7 +33,7 @@
 
   &__desktop-nav {
     z-index: 10;
-    @include view(mobile) {
+    @include view(tablet) {
       display: none;
     }
   }
@@ -45,7 +45,7 @@
   }
 
   &__link {
-    @include view(mobile) {
+    @include view(tablet) {
       margin-bottom: 15px;
     }
   }
@@ -106,7 +106,7 @@
     width: 25px;
     height: 25px;
 
-    @include view(mobile) {
+    @include view(tablet) {
       display: block;
     }
   }
