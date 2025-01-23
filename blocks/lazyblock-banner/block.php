@@ -1,4 +1,4 @@
-<section id="home" class="banner">
+<section id="about" class="banner">
   <div class="banner__blure"></div>
   <div class="banner__text-wrapper">
     <h1 class="banner__heading"><?php echo esc_html($attributes['banner-heading']) ?></h1>
