@@ -35,6 +35,7 @@ body {
 }
 
 .cta-link:hover {
+  cursor: pointer;
   background-color: lighten($color: $green, $amount: 10%);
 }
 
