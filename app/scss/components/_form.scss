@@ -1,54 +1,31 @@
-.wpforms-field-row.wpforms-field-medium {
-  max-width: 100% !important;
+.wpcf7-form {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.wpforms-field-medium.wpforms-field-required {
-  max-width: 100% !important;
+.wpcf7-form .ajax-loader {
+  display: none !important; /* Hides the spinner */
+}
+
+.wpcf7-spinner {
+  display: none;
 }
 
 .form {
-  display: flex;
-  flex-direction: column;
-  width: 50% !important;
-
   @include container;
 
-  @include view(tablet) {
-    width: 80% !important;
-  }
+  &__input {
+    margin-bottom: 20px;
 
-  @include view(tablet) {
-    width: 100% !important;
-  }
+    border: 2px solid $purple;
+    border-radius: 4px;
+    padding: 5px 15px;
 
-  @include view(mobile) {
-    padding-right: 20px !important;
-    padding-left: 20px !important;
-  }
-
-  &__name-inputs {
-    @include view(tablet) {
-      width: 100% !important;
-    }
-  }
-
-  &__email-input {
-    @include view(tablet) {
-      width: 100% !important;
-    }
-  }
-
-  &__submit-btn {
-    display: block;
-    margin-right: auto !important;
-    margin-bottom: 100px !important;
-    margin-left: auto !important;
-    background-color: $green !important;
-    min-width: 200px !important;
-    color: $white !important;
-
-    &:hover {
-      scale: 1.1;
+    &:focus {
+      outline: 2px solid $light-blue;
     }
   }
 }

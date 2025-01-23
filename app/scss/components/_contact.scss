@@ -1,4 +1,8 @@
 .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 200px 0;
 
   @include view(mobile) {
@@ -8,35 +12,46 @@
   @include container;
 
   &__heading {
+    display: block;
     position: relative;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     width: 100%;
-    color: $green;
+    color: $white;
     font-weight: bold;
     font-size: 36px;
     text-align: center;
 
     @include view(mobile) {
+      margin-bottom: 100px;
       font-size: 24px;
     }
 
     &::after {
       position: absolute;
-      top: 20px;
+      top: -10px;
       left: 50%;
       transform: translateX(-50%);
-      background-image: url("../images/leaf.webp");
-      width: 119px;
+      z-index: -100;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0% 50%);
+      background-color: $purple;
+      width: 40%;
       height: 119px;
       content: "";
 
+      @include view(tablet) {
+        width: 50%;
+      }
+
       @include view(mobile) {
-        width: 100px;
-        height: 100px;
+        width: 70%;
       }
     }
   }
 
+  &__text {
+    margin-bottom: 70px;
+    width: 50%;
+  }
   &__wrapper {
     display: flex;
 
@@ -44,70 +59,5 @@
       flex-direction: column-reverse;
       align-items: center;
     }
-  }
-
-  &__map-wrapper {
-    @include view(mobile) {
-      width: 100%;
-    }
-  }
-
-  &__map {
-    border: none;
-    width: 100%;
-    height: 450px;
-
-    @include view(small-desktop) {
-      width: 500px;
-      height: 500px;
-    }
-
-    @include view(tablet) {
-      width: 100%;
-      height: 500px;
-    }
-
-    @include view(mobile) {
-      height: 350px;
-    }
-  }
-
-  &__text-wrapper {
-    width: 40%;
-
-    @include view(tablet) {
-      width: 80%;
-    }
-    @include view(mobile) {
-      width: 90%;
-    }
-  }
-
-  &__text {
-    margin-bottom: 50px;
-  }
-
-  &__subheading {
-    margin-bottom: 10px;
-    padding-top: 40px;
-    color: $green;
-    font-size: 30px;
-  }
-
-  &__link-wrapper {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-
-  &__link-icon {
-    margin-right: 10px;
-    width: 25px;
-    object-fit: contain;
-  }
-
-  & a {
-    color: $black;
-    text-decoration: none;
   }
 }

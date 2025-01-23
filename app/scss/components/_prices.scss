@@ -42,6 +42,10 @@
         clip-path: polygon(0% 0%, 100% 0%, 100% 55%, 0% 40%);
         width: 30%;
       }
+
+      @include view(tablet) {
+        width: 50%;
+      }
     }
   }
 

@@ -45,6 +45,9 @@
         width: 50%;
         width: 30%;
       }
+      @include view(tablet) {
+        width: 50%;
+      }
     }
   }
 
