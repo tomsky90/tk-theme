@@ -1,4 +1,4 @@
-<section id="portfoliio" class="portfolio">
+<section id="portfolio" class="portfolio">
   <h2 class="portfolio__heading"><?php echo esc_html($attributes['work-example-heading']) ?></h2>
   <div class="portfolio__section-wrapper">
     <?php foreach ($attributes['work-example-examples'] as $example): ?>

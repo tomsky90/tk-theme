@@ -1,4 +1,4 @@
-<section class="gallery">
+<section id="portfolio" class="gallery">
   <h2 class="gallery__heading"><?php echo esc_html($attributes['recent-work-heading']) ?></h2>
 
   <div class="gallery__images-wrapper">

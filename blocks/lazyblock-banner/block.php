@@ -1,4 +1,4 @@
-<section id="about" class="banner">
+<section id="home" class="banner">
   <div class="banner__blure"></div>
   <div class="banner__text-wrapper">
     <h1 class="banner__heading"><?php echo esc_html($attributes['banner-heading']) ?></h1>
@@ -20,7 +20,7 @@
       <?php endif; ?>
     </div>
 
-    <a href="<?php echo esc_url($attributes['banner-cta']); ?>" target="blank" class="cta-link">Contact Me</a>
+    <a class="cta-link " target="blank" href="#contact">Contact Me</a>
 
 
   </div>

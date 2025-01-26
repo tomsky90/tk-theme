@@ -1,4 +1,4 @@
-<section id="#about" class="home-about">
+<section id="about" class="home-about">
   <div class="home-about__wrapper">
     <h2 class="home-about__heading"><?php echo esc_html($attributes['home-about-heading']) ?></h2>
 
@@ -21,7 +21,7 @@
             <?php echo esc_html($paragraph['paragraph']); ?>
           </p>
         <?php endforeach; ?>
-        <a href="/contact" target="blank" class="cta-link">Contact Me</a>
+        <a href="#contact" target="blank" class="cta-link">Contact Me</a>
       </div>
 
     </div>

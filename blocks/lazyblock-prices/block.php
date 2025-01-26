@@ -12,7 +12,7 @@
     <p class="prices__price-text"><span
         class="prices__span">£<?php echo esc_html($attributes['prices-total-price']) ?></span> - Total Price</p>
     <p class="prices__text"></p>
-    <a href="/contact" target="blank" class="cta-link">Contact Me</a>
+    <a href="#contact" target="blank" class="cta-link">Contact Me</a>
   </div>
   <div class="prices__text-wrapper">
     <ul class="prices__text-list">Includes</ul>

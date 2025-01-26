@@ -18,12 +18,11 @@ body {
 }
 
 .cta-link {
-  transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out, transform 0.1s ease-in-out;
   border: none;
   border-radius: 4px;
   background: linear-gradient(to bottom, $light-blue, $blue);
   padding: 10px 15px;
-
   color: white;
   font-weight: 800;
   font-size: 32px;
@@ -32,14 +31,13 @@ body {
   @include view(mobile) {
     font-size: 18px;
   }
-}
 
-.cta-link:hover {
-  cursor: pointer;
-  background-color: lighten($color: $green, $amount: 10%);
-}
-
-a,
-button {
-  cursor: pointer;
+  &:hover {
+    cursor: pointer;
+    background: linear-gradient(
+      to bottom,
+      lighten($light-blue, 20%),
+      lighten($blue, 10%)
+    );
+  }
 }

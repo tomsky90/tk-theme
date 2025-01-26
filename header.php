@@ -4,14 +4,15 @@
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Wirral Landscaping</title>
+	<title>TK Websites</title>
 	<meta name="description"
-		content="Wirral based landscaping company, serving customers around Wirral, Liverpool and Cheshire, for over ten years.">
-	<meta name="keywords" content="landscaping, wirral, patios, drives, gardens design, landscape design">
+		content="Freelance web developer and designer based in Wirral, UK, creating custom, responsive websites tailored to your business needs">
+	<meta name="keywords"
+		content="Freelance web developer, web designer Wirral, responsive web design, custom websites UK, WordPress developer, UX/UI design Wirral, professional web design">
 
-	<meta property="og:title" content="Wirrallandscaping  " />
+	<meta property="og:title" content="TK Websites  " />
 	<meta property="og:description"
-		content="Wirral based landscaping company, serving customers around Wirral, Liverpool and Cheshire, for over ten years." />
+		content="Freelance web developer and designer based in Wirral, UK, creating custom, responsive websites tailored to your business needs" />
 
 	<meta property="og:url" content="https://wirrallandscaping.tk-webdev.com/" />
 	<meta property="og:type" content="website" />
