@@ -19,10 +19,13 @@
 
   &__input {
     margin-bottom: 20px;
-
     border: 2px solid $purple;
     border-radius: 4px;
     padding: 5px 15px;
+
+    @include view(mobile) {
+      width: 100%;
+    }
 
     &:focus {
       outline: 2px solid $light-blue;

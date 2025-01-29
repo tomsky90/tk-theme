@@ -6,7 +6,8 @@
   padding: 200px 0;
 
   @include view(mobile) {
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   @include container;
@@ -43,7 +44,7 @@
       }
 
       @include view(mobile) {
-        width: 70%;
+        width: 80%;
       }
     }
   }
