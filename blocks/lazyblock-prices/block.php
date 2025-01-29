@@ -15,15 +15,15 @@
     <a href="#contact" target="blank" class="cta-link">Contact Me</a>
   </div>
   <div class="prices__text-wrapper">
-    <ul class="prices__text-list">Includes</ul>
-    <?php foreach ($attributes['prices-includes'] as $benefit): ?>
+    <ul class="prices__text-list">Includes
+      <?php foreach ($attributes['prices-includes'] as $benefit): ?>
 
-      <li class="prices__list-item">
-        <p class="prices__list-item-text"><?php echo esc_html($benefit['prices-includes-benefit']) ?></p>
-      </li>
+        <li class="prices__list-item">
+          <p class="prices__list-item-text"><?php echo esc_html($benefit['prices-includes-benefit']) ?></p>
+        </li>
 
 
-    <?php endforeach; ?>
+      <?php endforeach; ?>
     </ul>
   </div>
 </section>
