@@ -12,7 +12,7 @@ if (!defined('_S_VERSION')) {
 require_once 'inc/menus.php';
 
 
-
+add_theme_support('post-thumbnails');
 function init_scripts()
 {
     wp_register_style('main-css', get_template_directory_uri() . '/assets/css/main.css?v=5.2', [], false, 'all');

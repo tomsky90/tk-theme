@@ -1,0 +1,26 @@
+.single-post {
+  &__wrapper {
+    padding-top: 300px;
+    @include container;
+  }
+
+  &__heading {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  & p {
+    margin-bottom: 20px;
+  }
+
+  & figure {
+    margin-bottom: 20px;
+  }
+}
+
+.post-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
