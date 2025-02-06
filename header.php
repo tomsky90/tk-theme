@@ -4,26 +4,29 @@
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>TK Websites - Freelance Web Developer & Designer in Wirral, UK</title>
+	<title>Web Design Wirral | TK Websites - Freelance Web Designer & Developer</title>
+
 	<meta name="description"
-		content="Freelance web developer and designer in Wirral, UK. Custom, responsive websites tailored to your business needs. Specializing in WordPress, UX/UI design, and professional web design.">
+		content="Looking for expert web design in Wirral? TK Websites creates custom, responsive websites for businesses. Specializing in WordPress, UX/UI design, and professional web development.">
+
 	<meta name="keywords"
-		content="Freelance web developer Wirral, web designer Wirral, web designer Liverpool, web designer Chester, web designer Cheshire, responsive web design UK, custom websites UK, WordPress developer UK, UX/UI design Wirral, professional web design Wirral">
+		content="web design Wirral, freelance web developer Wirral, web designer Wirral, Wirral web development, professional web design Wirral, responsive web design Wirral, WordPress developer Wirral, UX/UI designer Wirral, business website Wirral">
+
 
 	<!-- Open Graph Metadata -->
-	<meta property="og:title" content="TK Websites - Freelance Web Developer & Designer in Wirral, UK" />
+	<meta property="og:title" content="Web Design Wirral | TK Websites - Freelance Web Designer & Developer" />
 	<meta property="og:description"
 		content="Freelance web developer and designer in Wirral, UK. Creating custom, responsive websites tailored to your business needs. Specializing in WordPress and UX/UI design." />
-	<meta property="og:url" content="https://wirrallandscaping.tk-webdev.com/" />
+	<meta property="og:url" content="https://tk-webdev.com/" />
 	<meta property="og:type" content="website" />
-	<meta property="og:image" content="https://wirrallandscaping.tk-webdev.com/path-to-image.jpg" />
+	<meta property="og:image" content="https://wirrallandscaping.tk-webdev.com/assets/images/logo.webp" />
 
 	<!-- Twitter Card Metadata -->
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="TK Websites - Freelance Web Developer & Designer in Wirral, UK">
+	<meta name="twitter:title" content="Web Design Wirral | TK Websites - Freelance Web Designer & Developer">
 	<meta name="twitter:description"
 		content="Freelance web developer and designer in Wirral, UK. Custom, responsive websites tailored to your business needs. Specializing in WordPress, UX/UI design, and professional web design.">
-	<meta name="twitter:image" content="https://wirrallandscaping.tk-webdev.com/path-to-image.jpg">
+	<meta name="twitter:image" content="https://wirrallandscaping.tk-webdev.com/assets/images/logo.webp">
 
 
 
