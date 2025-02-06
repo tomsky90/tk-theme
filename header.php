@@ -28,6 +28,22 @@
 		content="Freelance web developer and designer in Wirral, UK. Custom, responsive websites tailored to your business needs. Specializing in WordPress, UX/UI design, and professional web design.">
 	<meta name="twitter:image" content="https://wirrallandscaping.tk-webdev.com/assets/images/logo.webp">
 
+	<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "WebSite",
+	"name": "TK Websites",
+	"url": "https://tk-webdev.com/",
+	"description": "Web design Wirral – Custom, responsive websites for businesses. WordPress & UX/UI expert.",
+
+	"address": {
+		"@type": "PostalAddress",
+		"addressLocality": "Wirral",
+		"addressRegion": "Merseyside",
+		"addressCountry": "UK"
+	}
+}
+</script>
 
 
 
