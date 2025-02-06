@@ -2,6 +2,10 @@
   &__wrapper {
     padding-top: 300px;
     @include container;
+
+    @include view(mobile) {
+      padding-top: 150px;
+    }
   }
 
   &__heading {
@@ -11,6 +15,7 @@
 
   & p {
     margin-bottom: 20px;
+    text-align: start;
   }
 
   & figure {
@@ -23,4 +28,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.wp-block-heading {
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: start;
 }
