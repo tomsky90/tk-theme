@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 200px 0;
+  padding: 200px;
 
   @include view(mobile) {
     padding-top: 100px;
