@@ -1,6 +1,7 @@
 .prices {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   padding: 100px 0;
 
   @include view(tablet) {
@@ -10,6 +11,14 @@
   }
 
   @include container;
+
+  &__even {
+    flex-direction: row-reverse;
+
+    @include view(tablet) {
+      flex-direction: column;
+    }
+  }
 
   &__heading {
     position: relative;
@@ -99,6 +108,10 @@
     margin-bottom: 30px;
     font-size: 36px;
     list-style: none;
+  }
+
+  &__text-list-heading {
+    margin-bottom: 20px;
   }
 
   &__list-item {
