@@ -32,12 +32,16 @@
     <div class="footer__links-wrapper">
       <h3 class="footer__heading">Links</h3>
       <ul class="footer__nav">
-        <li class='footer__link-wrapper'><a class="footer__link" href="#home">Home</a></li>
-        <li class='footer__link-wrapper'><a class="footer__link" href="#about">About</a></li>
-        <li class='footer__link-wrapper'><a class="footer__link" href="#services">Services</a></li>
-        <li class='footer__link-wrapper'><a class="footer__link" href="#prices">Prices</a></li>
-        <li class='footer__link-wrapper'><a class="footer__link" href="#portfolio">Portfolio</a></li>
-        <li class='footer__link-wrapper'><a class="footer__link" href="#contact">Contact</a></li>
+        <li class='footer__link-wrapper'><a class="footer__link" href="https://tk-webdev.com/#home">Home</a></li>
+        <li class='footer__link-wrapper'><a class="footer__link" href="https://tk-webdev.com/#about">About</a></li>
+        <li class='footer__link-wrapper'><a class="footer__link" href="https://tk-webdev.com/#services">Services</a>
+        </li>
+        <li class='footer__link-wrapper'><a class="footer__link" href="https://tk-webdev.com/#prices">Prices</a></li>
+        <li class='footer__link-wrapper'><a class="footer__link" href="https://tk-webdev.com/#portfolio">Portfolio</a>
+        </li>
+        <li class='footer__link-wrapper'><a class="footer__link" href="https://tk-webdev.com/blog/">Blog</a></li>
+        <li class='footer__link-wrapper'><a class="footer__link" href="https://tk-webdev.com/#contact">Contact</a></li>
+
 
       </ul>
     </div>
