@@ -9,6 +9,7 @@
 
   &__heading {
     margin-bottom: 50px;
+    width: 100%;
     text-align: center;
   }
 
@@ -53,4 +54,10 @@
     text-align: center;
     text-decoration: none;
   }
+}
+
+.posts-wrapper {
+  display: flex;
+  column-gap: 15px;
+  flex-wrap: wrap;
 }

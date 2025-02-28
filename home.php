@@ -14,30 +14,33 @@ get_header();
   </div>
   <h1 class="blog-posts__heading">Check my new articles</h1>
 
-  <?php if (have_posts()): ?>
-    <?php while (have_posts()):
-      the_post(); ?>
-      <div class="blog-posts__tile">
-        <?php if (has_post_thumbnail()): ?>
-          <div class="blog-posts__thumbnail">
-            <?php the_post_thumbnail('full'); ?>
+  <div class="posts-wrapper">
+
+    <?php if (have_posts()): ?>
+      <?php while (have_posts()):
+        the_post(); ?>
+        <div class="blog-posts__tile">
+          <?php if (has_post_thumbnail()): ?>
+            <div class="blog-posts__thumbnail">
+              <?php the_post_thumbnail('full'); ?>
+            </div>
+          <?php endif; ?>
+          <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+
+          <div class="blog-posts__desc">
+            <?php the_excerpt(); ?>
           </div>
-        <?php endif; ?>
-        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-
-        <div class="blog-posts__desc">
-          <?php the_excerpt(); ?>
         </div>
+      <?php endwhile; ?>
+
+      <div class="pagination">
+        <?php the_posts_pagination(); ?>
       </div>
-    <?php endwhile; ?>
 
-    <div class="pagination">
-      <?php the_posts_pagination(); ?>
-    </div>
-
-  <?php else: ?>
-    <p>No posts found.</p>
-  <?php endif; ?>
+    <?php else: ?>
+      <p>No posts found.</p>
+    <?php endif; ?>
+  </div>
 </div>
 
 <?php get_footer(); ?>
